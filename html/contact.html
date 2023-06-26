@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body >
+        <div class="hamburger" onclick="navbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+        <div class="navbar">
+            <ul>
+            <a #homenav href="../index.html">HOME</a>
+            <a onclick="about()" href="../index.html#about">ABOUT</a>
+            <a href="topics.html">TOPICS</a>
+            <a href="contact.html">CONTACT</a>
+            </ul>
+            </div>
+        <div class="contact">
+            <form action="../php/contact.php" method="POST">
+                <div class="contactform">
+                    <i id="contactformicon1" class="fa fa-user" aria-hidden="true"></i><input autocomplete="none" id="contactforminput"type="text" name="myname" placeholder="Enter your name"><br>
+                    <i id="contactformicon2" class="fa fa-envelope" aria-hidden="true"></i><input autocomplete="none" id="contactforminput"type="email" name="emailid" placeholder="Enter your Email"><br>
+                    <input autocomplete="none" id="contactforminput" type="text" name="subject" placeholder="Subject"><br>
+                    <textarea autocomplete="none" id="contactformtextarea" type="text" name="text" placeholder="Text..." rows="7"cols="30"></textarea><br>
+                    <button type="submit" id="contactformbtn">Submit</button>
+                </div>
+            </form>
+            <div class="phone">
+                <div class="phonenoch"></div>
+                <div class="phonebtn1"></div>
+                <div class="phonebtn2"></div>
+                <div class="phonebtn3"></div>
+                <div class="phoneimgcover">
+                    <div class="phoneimg"></div></div>
+            </div>
+            <script src="../javascript.js"></script>
+    </body>
+
+</html>
